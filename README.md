@@ -1,0 +1,1 @@
+Could you please further develop the recipe project, ensuring it has a clean and user-friendly design? Additionally, the functionality should be working so that when a user enters ingredients, the system generates a recipe along with the corresponding steps. Thank you!
