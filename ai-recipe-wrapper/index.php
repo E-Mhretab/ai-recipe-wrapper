@@ -1,4 +1,12 @@
-
+<?php
+require_once 'classes/recipe.php';
+session_start();
+$recipe = null;
+if (isset($_SESSION['recipe'])) {
+    $recipe = unserialize($_SESSION['recipe']);
+    unset($_SESSION['recipe']);
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -23,6 +31,26 @@
     <?php if (isset($_GET['message'])): ?>
       <div class="message">
         <?php echo htmlspecialchars($_GET['message']); ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($recipe): ?>
+      <div class="recipe-card">
+        <h2><?= htmlspecialchars($recipe->naam) ?></h2>
+        <p><strong>Bereidingstijd:</strong> <?= htmlspecialchars($recipe->bereidingstijd) ?></p>
+        <p><strong>Moeilijkheidsgraad:</strong> <?= htmlspecialchars($recipe->moeilijkheidsgraad) ?></p>
+        <h3>Ingrediënten</h3>
+        <ul>
+          <?php foreach ($recipe->ingrediënten as $ing): ?>
+            <li><?= htmlspecialchars($ing) ?></li>
+          <?php endforeach; ?>
+        </ul>
+        <h3>Stappen</h3>
+        <ol>
+          <?php foreach ($recipe->stappen as $step): ?>
+            <li><?= htmlspecialchars($step) ?></li>
+          <?php endforeach; ?>
+        </ol>
       </div>
     <?php endif; ?>
   </div>

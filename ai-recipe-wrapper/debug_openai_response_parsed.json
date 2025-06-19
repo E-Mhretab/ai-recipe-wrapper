@@ -1,0 +1,66 @@
+Array
+(
+    [id] => chatcmpl-Bk8XujABj1V5YJeF74P9FZHbsTCaR
+    [object] => chat.completion
+    [created] => 1750335638
+    [model] => gpt-3.5-turbo-0125
+    [choices] => Array
+        (
+            [0] => Array
+                (
+                    [index] => 0
+                    [message] => Array
+                        (
+                            [role] => assistant
+                            [content] => {
+  "naam": "Pasta met tomatensaus",
+  "ingrediënten": ["1 ui", "2 tomaten", "200g pasta", "olijfolie", "zout", "peper", "kruiden naar keuze"],
+  "bereidingstijd": "30 minuten",
+  "stappen": [
+    "Snipper de ui en snijd de tomaten in blokjes.",
+    "Kook de pasta volgens de instructies op de verpakking.",
+    "Verhit wat olijfolie in een pan en fruit de ui glazig.",
+    "Voeg de tomaten toe en laat ze zacht worden.",
+    "Breng de saus op smaak met zout, peper en kruiden naar keuze.",
+    "Giet de pasta af en meng deze door de tomatensaus.",
+    "Serveer de pasta met eventueel wat geraspte kaas en verse kruiden."
+  ],
+  "moeilijkheidsgraad": "Gemakkelijk"
+}
+                            [refusal] => 
+                            [annotations] => Array
+                                (
+                                )
+
+                        )
+
+                    [logprobs] => 
+                    [finish_reason] => stop
+                )
+
+        )
+
+    [usage] => Array
+        (
+            [prompt_tokens] => 99
+            [completion_tokens] => 233
+            [total_tokens] => 332
+            [prompt_tokens_details] => Array
+                (
+                    [cached_tokens] => 0
+                    [audio_tokens] => 0
+                )
+
+            [completion_tokens_details] => Array
+                (
+                    [reasoning_tokens] => 0
+                    [audio_tokens] => 0
+                    [accepted_prediction_tokens] => 0
+                    [rejected_prediction_tokens] => 0
+                )
+
+        )
+
+    [service_tier] => default
+    [system_fingerprint] => 
+)

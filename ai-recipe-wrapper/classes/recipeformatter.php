@@ -37,6 +37,39 @@
 class RecipeFormatter
 {
     // Probeer eerst de volledige JSON te parsen, anders minder streng extraheren
+    public function formatRecipe(string $rawOutput): ?Recipe
+    {
+        try {
+            // Probeer de output te decoderen als JSON
+            $data = json_decode($rawOutput, true);
+
+            // Controleer of de benodigde velden aanwezig zijn
+            if (
+                !$data ||
+                !isset($data['naam']) ||
+                !isset($data['ingrediënten']) ||
+                !isset($data['bereidingstijd']) ||
+                !isset($data['stappen']) ||
+                !isset($data['moeilijkheidsgraad'])
+            ) {
+                return null; // Geen geldige data
+            }
+
+            // Maak een nieuw Recipe object
+            return new Recipe(
+                $data['naam'],
+                $data['ingrediënten'],
+                $data['bereidingstijd'],
+                $data['stappen'],
+                $data['moeilijkheidsgraad']
+            );
+        } catch (Exception $e) {
+            // Bij fouten, return null
+            return null;
+        }
+    }
+
+    // Probeer eerst de volledige JSON te parsen, anders minder streng extraheren
     public function tryExtractRecipe(string $rawOutput): ?Recipe
     {
         // Eerst proberen als JSON te parsen

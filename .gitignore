@@ -1,0 +1,2 @@
+# Ignore local API key config
+ai-recipe-wrapper/config/config.php 

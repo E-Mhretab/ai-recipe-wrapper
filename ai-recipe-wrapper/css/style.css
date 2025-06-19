@@ -1,0 +1,110 @@
+body {
+  background: #f7f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 28px 24px 28px;
+}
+
+h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #4a5568;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 80px;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+
+textarea:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background: #2563eb;
+}
+
+.message {
+  background: #fefcbf;
+  color: #744210;
+  border: 1px solid #f6e05e;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 18px 0 0 0;
+  text-align: center;
+}
+
+.recipe-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.07);
+  padding: 24px 20px 18px 20px;
+  margin-top: 32px;
+}
+
+.recipe-card h2 {
+  color: #2b6cb0;
+  margin-top: 0;
+}
+
+.recipe-card h3 {
+  color: #2d3748;
+  margin-bottom: 6px;
+}
+
+.recipe-card ul, .recipe-card ol {
+  margin: 0 0 16px 18px;
+}
+
+.recipe-card li {
+  margin-bottom: 4px;
+  color: #2d3748;
+} 

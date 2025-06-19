@@ -1,0 +1,1 @@
+Genereer een volledig recept in het Nederlands op basis van de volgende ingrediënten: ui, tomaat, pasta. Geef het resultaat als gestructureerde JSON met de velden: naam, ingrediënten (lijst), bereidingstijd, stappen (lijst), moeilijkheidsgraad.

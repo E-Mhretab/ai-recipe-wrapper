@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Bk8XujABj1V5YJeF74P9FZHbsTCaR",
+  "object": "chat.completion",
+  "created": 1750335638,
+  "model": "gpt-3.5-turbo-0125",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"naam\": \"Pasta met tomatensaus\",\n  \"ingrediënten\": [\"1 ui\", \"2 tomaten\", \"200g pasta\", \"olijfolie\", \"zout\", \"peper\", \"kruiden naar keuze\"],\n  \"bereidingstijd\": \"30 minuten\",\n  \"stappen\": [\n    \"Snipper de ui en snijd de tomaten in blokjes.\",\n    \"Kook de pasta volgens de instructies op de verpakking.\",\n    \"Verhit wat olijfolie in een pan en fruit de ui glazig.\",\n    \"Voeg de tomaten toe en laat ze zacht worden.\",\n    \"Breng de saus op smaak met zout, peper en kruiden naar keuze.\",\n    \"Giet de pasta af en meng deze door de tomatensaus.\",\n    \"Serveer de pasta met eventueel wat geraspte kaas en verse kruiden.\"\n  ],\n  \"moeilijkheidsgraad\": \"Gemakkelijk\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 233,
+    "total_tokens": 332,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
